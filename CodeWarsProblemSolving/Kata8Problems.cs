@@ -13,6 +13,24 @@
         }
         #endregion
 
-        
+        #region #2 Beginner - Lost Without a Map
+        // Link: https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/csharp
+        public static int[] Maps(int[] x) => x.Select(x => x * 2).ToArray();
+        #endregion
+
+        #region #3 Convert boolean values to strings 'Yes' or 'No'.
+        public static string boolToWord(bool word) => word ? "Yes" : "No";
+        #endregion
+
+        #region #4 Counting sheep...
+        public static int CountSheeps(bool[] sheeps) => sheeps.Count(x => x);
+        #endregion
+
+        #region #5 Opposites Attract
+        public static bool lovefunc(int flower1, int flower2) =>
+            (flower1 + flower2) % 2 != 0 ? true : false;
+        #endregion
+
+
     }
 }
