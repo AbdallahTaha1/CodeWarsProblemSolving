@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var output = Kata8Problems.AbbrevName("Ahmed");
+            Console.WriteLine(output);
         }
     }
 }
