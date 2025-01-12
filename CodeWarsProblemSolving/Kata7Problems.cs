@@ -9,13 +9,40 @@ namespace CodeWarsProblemSolving
         public static int SquareDigits(int n)
         {
             StringBuilder result = new StringBuilder();
-            var chars = n.ToString();
-            foreach (var x in chars)
+            foreach (var x in n.ToString())
             {
                 int digit = int.Parse(x.ToString());
                 result.Append(digit * digit);
             }
             return int.Parse(result.ToString());
+        }
+        #endregion
+
+        #region 2# Growth of a Population
+        public static int NbYear(int p0, double percent, int aug, int p)
+        {
+            int nbYears = 0;
+            double currentP = p0;
+            while(currentP < p)
+            {
+                currentP = Math.Floor(currentP * (1 + percent / 100) + aug);
+                nbYears++;
+            }
+            return nbYears;
+        }
+        #endregion
+
+        #region 3# Get the Middle Character
+        public static string GetMiddle(string s)
+        {
+            if (s.Length % 2 != 0)
+            {
+                return $"{s[s.Length / 2]}";
+            }
+            else
+            {
+                return $"{s[s.Length / 2 - 1]}{s[s.Length / 2]}";
+            }
         }
         #endregion
 

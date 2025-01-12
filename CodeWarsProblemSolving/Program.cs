@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var output = Kata8Problems.AbbrevName("Ahmed");
-            Console.WriteLine(output);
+            var output = Kata7Problems.NbYear(1500000, 2.5, 10000, 2000000);
+            Console.WriteLine(Convert.ToInt32(output));
         }
     }
 }
