@@ -43,6 +43,24 @@
         }
         #endregion
 
-
+        #region 7# Basic Mathematical Operations
+        public static double BasicOp(char operation, double value1, double value2)
+        {
+            switch (operation)
+            {
+                case '+':
+                    return value1 + value2;
+                case '-':
+                    return value1 - value2;
+                case '*':
+                    return value1 * value2;
+                case '/':
+                    return value1 / value2;
+                default:
+                    return -1;
+            }
+        }
+        #endregion
+        
     }
 }
