@@ -2,10 +2,12 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            var output = Kata7Problems.NbYear(1500000, 2.5, 10000, 2000000);
-            Console.WriteLine(Convert.ToInt32(output));
+
+            Console.WriteLine(Kata7Problems.ReverseWords("How are you"));
+
+            
         }
     }
 }

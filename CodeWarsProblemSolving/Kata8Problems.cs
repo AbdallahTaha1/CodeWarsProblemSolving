@@ -1,4 +1,6 @@
-﻿namespace CodeWarsProblemSolving
+﻿using System.Text;
+
+namespace CodeWarsProblemSolving
 {
     static class Kata8Problems
     {
@@ -61,6 +63,11 @@
             }
         }
         #endregion
+
+        #region 8# 
+        public static string Remove_char(string s) => s.Length > 2 ? s.Substring(1, s.Length - 2) : String.Empty;
         
+        #endregion
+
     }
 }
